@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  /* background-color: yellow; */
+}
+.sidebar {
+  background-color: #11101d;
+  height: 100%;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px 5px;
+  /* padding-left: 0px; */
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.close {
+  width: 70px;
+}
+.sidebar .logo_name {
+  display: flex;
+  /* background-color: yellow; */
+  height: 50px;
+  align-items: center;
+  /* padding: 10px; */
+  margin-top: 10px;
+  /* justify-content: space-around; */
+}
+
+.logo_name .logo {
+  font-size: 28px;
+  padding-left: 12px;
+  /* background-color: yellowgreen; */
+}
+
+.logo_name .name {
+  font-size: 22px;
+  padding: 6px;
+  padding-left: 10px;
+}
+
+.btn {
+  display: flex;
+  /* background-color: yellowgreen; */
+  width: 100%;
+  font-size: 20px;
+  margin-right: 5px;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.sidebar .main-icons {
+  margin-top: 26px;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* padding: 10px; */
+  /* background-color: aquamarine; */
+}
+
+.sidebar .main-icons i {
+  font-size: 15px;
+}
+
+.main-icons .search-bar {
+  display: flex;
+  padding-left: 10px;
+  height: 40px;
+  align-items: center;
+  /* width: 100%; */
+  /* background-color: wheat; */
+}
+.main-icons .search-bar div {
+  padding: 10px;
+}
+.main-icons .search-bar input {
+  padding: 5px 3px;
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  border: none;
+}
+
+.sidebar .main-icons .user {
+  height: 50px;
+  /* background-color: yellowgreen; */
+  align-items: center;
+  padding-left: 10px;
+  display: flex;
+}
+.main-icons .user div {
+  padding: 10px;
+}
+
+.sidebar .main-icons .message {
+  height: 50px;
+  align-items: center;
+  padding-left: 10px;
+  display: flex;
+}
+.main-icons .message div {
+  padding: 10px;
+}
+
+.sidebar .main-icons .analytics {
+  height: 50px;
+  align-items: center;
+  padding-left: 10px;
+  display: flex;
+}
+.main-icons .analytics div {
+  padding: 10px;
+}
+
+.sidebar .main-icons .file-manager {
+  height: 50px;
+  align-items: center;
+  padding-left: 13px;
+
+  display: flex;
+}
+.main-icons .file-manager div {
+  padding: 10px;
+}
+
+.sidebar .main-icons .order {
+  height: 50px;
+  align-items: center;
+  padding-left: 10px;
+
+  display: flex;
+}
+.main-icons .order div {
+  padding: 10px;
+}
+
+.sidebar .main-icons .saved {
+  height: 50px;
+  align-items: center;
+  padding-left: 10px;
+
+  display: flex;
+}
+.main-icons .saved div {
+  padding: 10px;
+}
+
+.sidebar .main-icons .setting {
+  height: 50px;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  /* background-color: yellowgreen; */
+}
+
+.sidebar .main-icons .setting:hover,
+.saved:hover,
+.order:hover,
+.file-manager:hover,
+.analytics:hover,
+.message:hover,
+.user:hover {
+  background: #1e1c33;
+}
+
+.main-icons .setting div {
+  padding: 10px;
+}
+
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
